@@ -1,24 +1,13 @@
-/**
- * 
- */
 package comp3111.labs.lab7;
 
-/**
- * @author kevinw
- * 
- * The coding style is bad in purpose.
+/*
+ * note the bad coding style (deliberately written for debugging exercise) 
  */
 public class main {
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Animal animals[] = new Animal[10];
 		for (Animal a : animals)
-			a = new Animal();
-		
+			a = new Animal();	
 		for (int iii = 0; iii < 10; iii++) {
 			int ii = 0;
 			for (; ii < 100 && animals[iii].isAlive() ; ii++) {
@@ -27,9 +16,6 @@ public class main {
 				if (ii % 3 == 0)
 				animals[iii].poo();
 			}
-		}
-
+		}	
 	}
-	
-
 }
